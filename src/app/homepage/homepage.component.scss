@@ -1,0 +1,32 @@
+#conatiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  width: 650px;
+}
+
+mat-card-title {
+  color: #3f51b5;
+  font-weight: 500;
+}
+
+mat-card-content:last-child {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  mat-form-field {
+    width: 100%;
+  }
+}
+
+img {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}

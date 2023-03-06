@@ -1,0 +1,41 @@
+<div class="container">
+    <mat-card>
+        <mat-card-content>
+            <mat-card-title>Login</mat-card-title>
+            <mat-card-subtitle>Equiment and repair manament system Computer Sciecn case study.</mat-card-subtitle>
+            <br>
+            <mat-form-field class="example-full-width">
+                <mat-label>Student id*</mat-label>
+                <input 
+                    type="text" 
+                    matInput 
+                    [(ngModel)]="usersData.email"
+                    placeholder="ex.116309050001"
+                >
+                <mat-icon matSuffix>email</mat-icon>
+            </mat-form-field>
+            
+            <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input 
+                    type="text" 
+                    matInput 
+                    [(ngModel)]="usersData.password"
+                    placeholder="ex.102030"
+                >
+                <mat-icon matSuffix>lock</mat-icon>
+            </mat-form-field>
+            
+            <button 
+                mat-raised-button color="primary"
+                (click)="checkLogin()"
+            >
+                <mat-icon>check</mat-icon>
+                login
+            </button>
+            
+            <a routerLink="/register"><span>Resgister</span></a>
+        
+        </mat-card-content>
+    </mat-card>
+</div>
